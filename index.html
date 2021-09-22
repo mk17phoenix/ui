@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type:none;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .sidebar{
+            position:fixed;
+            left:0;
+            width:250px;
+            height: 100%;
+            background: rgb(255, 252, 252);
+        }
+        .sidebar header{
+            font-size: 22px;
+            color:orangered;
+            text-align:center;
+            line-height: 70px;
+            background: rgb(255, 255, 255);
+            user-select: none;
+        }
+       
+        .sidebar ul{
+            display: block;
+            width:100%;
+            line-height: 65px;
+            font-size: 20px;
+            color:black;
+            padding-left: 40px;
+
+        }
+        .sidebar button{
+            font-size: 20px;
+            width: 30%;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: orange;
+            margin-top: 10%;
+            margin-left: 30%;
+            color: white;
+            border: thin;
+        }
+        .hint{
+            margin:20px;
+            font-size: 20px;
+            position: absolute;
+            height:100px;
+            width:250px;
+            right:0
+            
+        }
+        .mainbar{
+            position:absolute;
+            margin-top: 150px;
+            left: 20%;
+        }
+        .one,.two,.three,.four,.five{
+            height:120px;
+            width:120px;
+            border-radius: 100px;
+            background-repeat: no-repeat;
+            
+        }
+        .one{
+            background-image: url(paneer.jpg);
+            background-size: cover;
+        }
+        .two{
+            background-image: url(mush.jpg);
+            background-size: cover;
+            background-size: 130px;
+            
+        }
+        .three{
+            background-image: url(prawn.jpg);
+            background-size: 115px;
+            background-position:top center;
+        }
+        .four{
+            background-image: url(chicken.jpg);
+            background-size: cover;
+            
+        }
+        .five{
+            background-image: url(briyani.jpg);
+            background-size: cover;
+            
+        }
+
+        .tiny{
+            border:1px solid whitesmoke ;
+            border-radius: 20px;
+            padding:10px;
+            margin:10px;
+            text-align:center;
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+
+            
+        }
+        .box{
+            display:flex;
+            
+
+        }
+        h2{
+            font-size: 50px;
+        }
+        @media (max-width:600px) {
+           
+            .mainbar h2{
+
+                position:relative;
+                margin-top:2px;
+                font-size:x-large;
+            }
+           
+            .sidebar{
+                display: none;
+            }
+            
+            .hint{
+                display:none;
+            }
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <header>Food App</header>
+        <ul>
+            <li style="text-decoration:line-through;text-decoration-color:red">About</li>
+            <li>Services</li>
+            <li>Cuisine</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+            <li>Book</li>
+            
+        </ul>
+        <button>Cart</button>
+
+        
+    </div>
+    <div class="hint"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a blanditiis limited quidem fugit id!</p><div style="text-decoration:underline;text-decoration-color:red;color:white">something</div></div>
+<div class="mainbar">
+    <h2>We have delicious briyani,<br> Let's taste it....</h2>
+    <div class="box">
+        <div class="tiny">
+           <div class="one"></div> 
+           <br>
+           Butter Briyani
+        </div>
+        <div class="tiny">
+            <div class="two"></div>
+            <br>
+            Mushroom Briyani</div>
+        <div class="tiny">
+            <div class="three"></div>
+            <br>
+            Prawn Briyani</div>
+        <div class="tiny">
+            <div class="four"></div>
+            <br>
+            Chicken Briyani</div>
+        <div class="tiny">
+            <div class="five"></div>
+            <br>
+            Mutton Briyani</div>
+    </div>
+    </div>
+</body>
+</html>
